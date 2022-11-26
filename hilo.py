@@ -2,15 +2,12 @@ from random import random
 
 x = int(round(random() * 99) + 1)
 
-print(x)
 
 guess_num = 1
 
 y = int(input(f"Enter guess {guess_num}: "))
 
-print(y)
-
-while guess_num < 4:
+while guess_num < 5:
     guess_num += 1
     if x > y:
         y = int(input(f"too low, try again, guess {guess_num}:"))
